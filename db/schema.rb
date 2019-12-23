@@ -10,6 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 0) do
+=======
 ActiveRecord::Schema.define(version: 2019_12_20_150333) do
 
   create_table "users", force: :cascade do |t|
@@ -23,5 +26,6 @@ ActiveRecord::Schema.define(version: 2019_12_20_150333) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+>>>>>>> 9bbe17dbc732af9d56ca2a03a18e220b137061e6
 
 end
