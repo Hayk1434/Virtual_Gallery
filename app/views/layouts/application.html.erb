@@ -5,8 +5,6 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,32 +31,21 @@
         <%= link_to "help", root_path, :class => "nav-link"%>
         </div>
       </li>
+      <p class="navbar-text text-align:right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+</p>
     </ul>
   </div>
 </nav>
 
-<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-    <%= image_tag 'pariz.jpg', :class => "d-block w-100" %>
-    </div>
-    <div class="carousel-item" data-interval="2000">
-    <%= image_tag 'l.jpg', :class => "d-block w-100" %>>
-    </div>
-    <div class="carousel-item">
-    <%= image_tag 'll.jpg', :class => "d-block w-100" %>>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
+
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -68,7 +55,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="x12">
+ 
     <%= yield %>
 
 
