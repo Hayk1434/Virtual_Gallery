@@ -396,6 +396,7 @@ body {
 .form-label-group {
   position: relative;
   margin-bottom: 1rem;
+left: 50%
 }
 
 .form-label-group input {
@@ -411,7 +412,7 @@ body {
 .form-label-group>label {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   display: block;
   width: 100%;
   margin-bottom: 0;
@@ -463,4 +464,32 @@ body {
 .btn-facebook {
   color: white;
   background-color: #3b5998;
+}
+
+.height{
+  height:  330px;
+}
+
+
+label{
+  font-size: 14px
+}
+
+.field{
+  margin-top: -12px
+}
+
+.actions{
+  width: 20px;  
+  margin-left: 40%
+}
+
+.input{
+  width: 250px
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), blue, rgba(0, 0, 0, 0));
 }
