@@ -336,9 +336,9 @@ body {
 
 
 
-body {
-  background: linear-gradient(to right, #348180 , #00FFFB  );
-}
+// body {
+//   background: linear-gradient(to right, #348180 , #00FFFB  );
+// }
 
 
 
@@ -386,7 +386,7 @@ body {
 
 .form-signin .btn {
   font-size: 80%;
-  border-radius: 5rem;
+ 
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
@@ -400,7 +400,7 @@ body {
 
 .form-label-group input {
   height: auto;
-  border-radius: 2rem;
+
 }
 
 .form-label-group>input,
