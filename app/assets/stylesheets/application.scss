@@ -88,16 +88,7 @@
     width:600px;
     margin-left: 700px;
 }
-.navbar-brand{
-    font-size: 20px;
-}
-.nav-item{
-    font-size: 20px;
-}
 
-body {
-    background: #F1F3FA;
-  }
   
 
   
@@ -154,44 +145,7 @@ body {
     margin-right: 0px;
   }
       
-  .profile-usermenu {
-    margin-top: 30px;
-  }
-  
-  .profile-usermenu ul li {
-    border-bottom: 1px solid #f0f4f7;
-  }
-  
-  .profile-usermenu ul li:last-child {
-    border-bottom: none;
-  }
-  
-  .profile-usermenu ul li a {
-    color: #93a3b5;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  .profile-usermenu ul li a i {
-    margin-right: 8px;
-    font-size: 14px;
-  }
-  
-  .profile-usermenu ul li a:hover {
-    background-color: #fafcfd;
-    color: #5b9bd1;
-  }
-  
-  .profile-usermenu ul li.active {
-    border-bottom: none;
-  }
-  
-  .profile-usermenu ul li.active a {
-    color: #5b9bd1;
-    background-color: #f6f9fb;
-    border-left: 2px solid #5b9bd1;
-    margin-left: -2px;
-  }
+ 
   
   /* Profile Content */
   .profile-content {
@@ -209,38 +163,9 @@ body {
 
 
 
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%; }
-  .gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease; }
-  .gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
+
   
-  @media (max-width: 450px) {
-  .gallery {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  column-count: 1;
-  -webkit-column-width: 100%;
-  -moz-column-width: 100%;
-  column-width: 100%;
-  }
-  }
-  
-  @media (max-width: 400px) {
-  .btn.filter {
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
-  }
-  }
+
 
   .hovereffect {
     width: 100%;
@@ -492,4 +417,39 @@ hr{
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), blue, rgba(0, 0, 0, 0));
+}
+
+.navbar {
+ 
+  margin-bottom: 0px !important;
+
+}
+
+
+
+nav {
+  padding: 24px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background: #74ADAA;
+
+}
+
+nav a {
+  transition: 0.3s ease;
+  background: #74ADAA;
+  color: white !important;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding: 20px 0;
+  margin: 0 -306px;
+  font-size: 17px;
+  text-decoration: none !important;
+}
+nav a:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0; 
 }
