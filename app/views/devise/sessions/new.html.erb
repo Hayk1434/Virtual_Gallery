@@ -33,10 +33,12 @@
                 </div>
               <% end %>
 <hr>
-              <div class="actions">
-                <%= f.submit "Log in" %>
+              <div class="actions ">
+                <%= f.submit "Log in", class: "btn btn-outline-primary", style: "margin-bottom: 12px" %>
               </div>
             <% end %>
+
+<hr>            
 
             <%= render "devise/shared/links", style: "margin-left: 40%"  %>
 

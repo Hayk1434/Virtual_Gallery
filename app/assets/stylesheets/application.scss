@@ -336,9 +336,9 @@ body {
 
 
 
-// body {
-//   background: linear-gradient(to right, #348180 , #00FFFB  );
-// }
+body {
+  background: linear-gradient(to right, #348180 , #00FFFB  );
+}
 
 
 
@@ -351,10 +351,10 @@ body {
   --input-padding-y: .75rem;
 }
 
-body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-}
+// body {
+//   background: #007bff;
+//   background: linear-gradient(to right, #0062E6, #33AEFF);
+// }
 
 .card-signin {
   border: 0;
