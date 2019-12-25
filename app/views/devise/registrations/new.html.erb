@@ -1,5 +1,6 @@
 
 
+
 <div class="container">
     <div class="row">
       <div class="col-lg-10 col-xl-6 mx-auto" style="margin-top: 25%">
@@ -7,40 +8,39 @@
           <div class="card-img-left d-none d-md-flex">
              <!-- Background image for card set in CSS! -->
           </div>
-          <div class="card-body height", style="height: 400px">
-            <h5 class="card-title text-center">Login</h5>
-            
-            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="card-body height">
+            <h5 class="card-title text-center">Sign Up</h5>
+
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+
               <div class="field">
                 <%= f.label :email %><br />
-                <%= f.email_field :email, autofocus: true, autocomplete: "email" , style: "width: 250px ; height: 30px" %>
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" , style: "width: 250px ; height: 30px"%>
               </div>
-<hr>
-              <div class="field">
-                <%= f.label :password %><br />
-                <%= f.password_field :password, autocomplete: "current-password", style: "width: 250px; height: 30px" %>
-              </div>
+              <hr>
 
-<hr>
+              <div class="field">
+                <%= f.label :password %>
+                <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "new-password", style: "width: 250px ; height: 30px" %>
+              </div>
+              <hr>
 
               <div class="field">
                 <%= f.label :password_confirmation %><br />
-                <%= f.password_field :password_confirmation, autocomplete: "new-password", style: "width: 250px; height: 30px" %>
+                <%= f.password_field :password_confirmation, autocomplete: "new-password", style: "width: 250px ; height: 30px" %>
               </div>
-<hr>
-              <% if devise_mapping.rememberable? %>
-                <div class="field">
-                  <%= f.check_box :remember_me %>
-                  <%= f.label :remember_me %>
-                </div>
-              <% end %>
-<hr>
+              <hr>
+
               <div class="actions">
-                <%= f.submit "Sign up", class: "btn btn-outline-primary", style: "margin-bottom: 12px" %>
+                <%= f.submit "Sign up", class: "btn btn-outline-primary", style: "margin-bottom: 12px"  %>
               </div>
             <% end %>
-<hr>
-            <%= render "devise/shared/links", style: "margin-left: 40%" %>
+
+            <%= render "devise/shared/links", style: "margin-left: 40%"  %>
 
               <hr class="my-4">
             </form>
