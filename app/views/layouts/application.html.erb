@@ -5,16 +5,6 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<nav class="navbar fixed-top">
-    <a href="#">Home <span class="sr-only">(current)</span></a>
-    <a href="#">Help</a>
-    <a href="#">Profil</a>
-    <a href="#">Settings</a>
-    <a href="#">Prices</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact us</a>
-</nav>
-
 
 
     <%= csrf_meta_tags %>
@@ -24,17 +14,24 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<body>
+  <nav  >
+      <a href="#">Home <span class="sr-only">(current)</span></a>
+      <a href="#">Help</a>
+      <a href="#">Profil</a>
+      <a href="#">Settings</a>
+      <a href="#">Prices</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact us</a>
+  </nav>
+  <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
  
     <%= yield %>
-
-
-<% if notice %>
-<p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-<p class="alert alert-danger"><%= alert %></p>
-<% end %>
 
 
 <div class="footer">
