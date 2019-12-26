@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
       <div class="col-lg-10 col-xl-6 mx-auto" style="margin-top: 25%">
-        <div class="card card-signin flex-row my-5">
+        <div class="card card-signin flex-row my-5" style="min-height: 500px">
           <div class="card-img-left d-none d-md-flex">
              <!-- Background image for card set in CSS! -->
           </div>
@@ -18,7 +18,8 @@
                 <%= f.label :email %><br />
                 <%= f.email_field :email, autofocus: true, autocomplete: "email" , style: "width: 250px ; height: 30px"%>
               </div>
-              <hr>
+
+<hr>
 
               <div class="field">
                 <%= f.label :password %>
@@ -27,13 +28,14 @@
                 <% end %><br />
                 <%= f.password_field :password, autocomplete: "new-password", style: "width: 250px ; height: 30px" %>
               </div>
-              <hr>
+<hr>
 
               <div class="field">
                 <%= f.label :password_confirmation %><br />
                 <%= f.password_field :password_confirmation, autocomplete: "new-password", style: "width: 250px ; height: 30px" %>
               </div>
-              <hr>
+
+<hr>
 
               <%= f.file_field :avatar%>
 
@@ -44,7 +46,7 @@
 
             <%= render "devise/shared/links", style: "margin-left: 40%"  %>
 
-              <hr class="my-4">
+              <hr>
             </form>
           </div>
         </div>
