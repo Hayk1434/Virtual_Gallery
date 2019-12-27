@@ -13,7 +13,7 @@
 
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
               <%= render "devise/shared/error_messages", resource: resource %>
-
+<hr>
               <div class="field">
                 <%= f.label :email %><br />
                 <%= f.email_field :email, autofocus: true, autocomplete: "email" , style: "width: 250px ; height: 30px"%>
@@ -37,12 +37,15 @@
 
 <hr>
 
-              <%= f.file_field :avatar%>
+              <%= f.file_field :avatar, class: "btn btn-outline-primary", style: "margin-bottom: 12px" %>
+
+<hr>
 
               <div class="actions">
                 <%= f.submit "Sign up", class: "btn btn-outline-primary", style: "margin-bottom: 12px"  %>
               </div>
             <% end %>
+<hr>
 
             <%= render "devise/shared/links", style: "margin-left: 40%"  %>
 

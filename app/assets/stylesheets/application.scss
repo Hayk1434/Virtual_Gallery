@@ -16,60 +16,71 @@
 
  @import "bootstrap";
 
-
- .downloadjpg{
-    width: 1200px;
-    height: 1000px;
+ .darken-3 {
+  padding-bottom: 39px;
+  padding-top: 2px;
 }
- .raw{
-     text-align: center;
-     color: black;
- }
- .o{
-    text-align: center;
-    color: black;
- }
- .z08{
-     text-align: center;
-     font-style: italic;
-     color:black;
- }
-
- .a12{
-    width:500px;
-    height:400px;
-    margin-left: 700px;
- }
-
- .t5{
-     color:black;
- }
-.z54{
-    width:300px;
-    height:400px;
-    margin-left: 700px;
+.text-center {
+ 
+  color: #0025fa;
+  font-size: 13px;
 }
-.a98{
-    color:black;
-    width: 250px;
+.navbar-link{
+  font-size: 14px;
+  color: #77d13d;
+}
+.darken-3{
+  background-color:#2f6060;
+  margin-top:100px;
+}
+.row .py-5{
+  padding-bottom: 0rem !important;
+}
+.row .py-5 {
+  padding-top: 2rem !important;
+}
+.py-5 .mb-5{
+  margin-bottom: 1rem !important;
+}
+.social:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.social {
+  padding:10px;
+  -webkit-transform: scale(1.2);
+  /* Browser Variations: */
+ 
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+#social-fb,#social-tw, #social-gp, #social-em{
+  color:white;
+}
+/*
+ Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+  color: #e8d6a5;
+}
+#social-tw:hover {
+  color: #4099FF;
+}
+#social-gp:hover {
+  color: #d34836;
+}
+#social-em:hover {
+  color: #f39c12;
+}
+.container{
+  margin-top: 42px;
 }
 
-.w87{
-    display:flex;
-    width:100px;
-   
-}
-
-.x54{
-    width:290px;
-    height:350px;
-    margin-left: 700px;
-}
-
-.pr-3{
-    font-size: 30px;
-    color: black;
-}
 
 .text-right{
     font-size: 30px;
@@ -84,10 +95,7 @@
     
 
 
-.zc25{
-    width:600px;
-    margin-left: 700px;
-}
+
 
   
 
@@ -414,8 +422,9 @@ label{
 }
 
 hr{
-  border: 1px;
-  // background-color: linear-gradient(to right, rgba(0, 0, 0, 0), blue, rgba(0, 0, 0, 0));
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 38, 255, 0.75), rgba(0, 0, 0, 0));
   
 }
 
