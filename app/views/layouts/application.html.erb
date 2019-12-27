@@ -12,7 +12,7 @@
 <nav>
       <%= link_to "Home",  static_pages_home_path, :class => "a" %>
       <%= link_to "Help",  static_pages_help_path, :class => "a" %>
-      <a href="#">Profile</a>
+      <%= link_to "Profile",  user_path(current_user), :class => "a" %>
       <a href="#">Settings</a>
       <a href="#">Prices</a>
       <a href="#">Gallery</a>
