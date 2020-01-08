@@ -474,3 +474,51 @@ nav a:hover {
 
 
 
+.container{
+  margin-top: 42px;
+}
+ .o{
+   color:white;
+   text-align:center;
+   margin-bottom: 30px;
+ }
+.table{
+    margin-top: 50px;
+    font-size: 20px;
+    width:600px;
+    margin:auto;}
+
+.card{
+
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 2rem;
+}
+
+.cardHome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+
+ 
+
+.navbar-link {
+  font-size: 14px;
+  color: #77d13d;
+}
+
+.navbar-link:hover{
+text-decoration:none;
+color:#ebc81a;
+font-weight: 154px;
+}
+
+
+
+.card-main{
+  width: 200px !important;
+  height: 400px !important;
+}

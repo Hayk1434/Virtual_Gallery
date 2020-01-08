@@ -1,12 +1,25 @@
-<% @photos.each_with_index do |photo, index| %>
-    <% if index%3 == 0 %>
-    <% else %>
-    <% end %>
-    <%= image_tag photo.image, class: "col-md-4" %>
-<% end %>
+
 
 <div class="row">
-  <div class="col-md-12">
+
+
+
+  <% @photos.each_with_index do |photo, index| %>
+      <figure class="col-md-4 " style="width: 18rem">
+          <a href="image_source" data-size="700x800">
+          <div class="hovereffect">
+            <%= image_tag photo.file, class: "img-fluid", style: "height: 100%", alt: "picture"%>
+              <div class="overlay">
+                
+                <p>
+                  <%= photo.title %>
+                </p>
+              </div> 
+          </a>
+        </figure>
+  <% end %>
+
+  <%# <div class="col-md-12">
 
     <div id="mdb-lightbox-ui"></div>
 
@@ -147,12 +160,12 @@
          </div> 
         </a>
         
-      </figure>
+      </figure> %>
 
 
 
 
-
+    </div>
   </div>
  </div>
 </div>
