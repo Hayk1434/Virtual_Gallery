@@ -1,8 +1,37 @@
-<%= @user.email %>
+<div class="view intro-2">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-light flex-center">
+                <div class="container text-center white-text">
+                    <div class="white-text text-center wow fadeInUp">
+                    <%= image_tag avatar_image, size: '250x250',class: 'rounded-circle mx-auto d-block'%>
+                 <b><h1 class="h1"> <%= @user.email %> </h1></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<%= image_tag avatar_image, size: '200x200',class: 'rounded-circle mx-auto d-block'%>
 
 
 
 
-<%= link_to 'Add photo', new_photo_path, class: 'btn btn-primary' %>
+
+<div class="row">
+
+
+
+  <% @photos.each_with_index do |photo, index| %>
+      <figure class="col-md-4 " style="width: 18rem">
+          <a href="image_source" data-size="700x800">
+          <div class="hovereffect">
+            <%= image_tag photo.file, class: "img-fluid", style: "height: 100%", alt: "picture"%>
+              <div class="overlay">
+               
+                <p>
+                  <%= photo.title %>
+                </p>
+              </div>
+          </a>
+        </figure>
+  <% end %>
+  </div>

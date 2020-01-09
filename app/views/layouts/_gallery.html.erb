@@ -5,7 +5,7 @@
 
 
   <% @photos.each_with_index do |photo, index| %>
-      <figure class="col-md-4 " style="width: 18rem">
+      <figure class="col-md-4" >
           <a href="image_source" data-size="700x800">
           <div class="hovereffect">
             <%= image_tag photo.file, class: "img-fluid", style: "height: 100%", alt: "picture"%>
@@ -165,7 +165,7 @@
 
 
 
-    </div>
+    <%# </div>
   </div>
- </div>
+ </div> %>
 </div>
