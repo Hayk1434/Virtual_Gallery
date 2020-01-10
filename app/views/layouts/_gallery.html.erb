@@ -4,7 +4,7 @@
 
 
 
-  <% @photos.each_with_index do |photo, index| %>
+  <% @photos.desc.each do |photo| %>
       <figure class="col-md-4" >
           <a href="image_source" data-size="700x800">
           <div class="hovereffect">

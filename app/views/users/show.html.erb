@@ -30,8 +30,11 @@
                 <p>
                   <%= photo.title %>
                 </p>
+                <%= link_to 'Delete', photo, method: :delete, data: {confirm: 'Are you sure?'} %>
               </div>
           </a>
+          
         </figure>
+        
   <% end %>
   </div>
