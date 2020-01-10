@@ -56,7 +56,7 @@ class PhotosController < ApplicationController
   def destroy
     @photo.destroy
     respond_to do |format|
-      format.html { redirect_to photos_url, notice: 'Photo was successfully destroyed.' }
+      format.html { redirect_to current_user, notice: 'Photo was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -72,3 +72,5 @@ class PhotosController < ApplicationController
       params.fetch(:photo, {}).permit(:description, :title, :file)
     end
 end
+
+

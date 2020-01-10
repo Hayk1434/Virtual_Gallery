@@ -6,17 +6,20 @@
 
   <% @photos.desc.each do |photo| %>
       <figure class="col-md-4" >
-          <a href="image_source" data-size="700x800">
           <div class="hovereffect">
             <%= image_tag photo.file, class: "img-fluid", style: "height: 100%", alt: "picture"%>
               <div class="overlay">
                 
-                <p>
-                  <%= photo.title %>
+                 <p>
+                  <%= link_to photo.title, photo_path(photo) %>
                 </p>
+                <% if current_user.id == photo.user_id%>
+                  <%= link_to 'Delete', photo, method: :delete, data: {confirm: 'Are you sure?'} %>
+                <% end %>
+              </div>
               </div> 
-          </a>
         </figure>
+
   <% end %>
 
   <%# <div class="col-md-12">

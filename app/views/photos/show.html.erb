@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
+<%= image_tag @photo.file, class: "img-fluid mx-auto d-block m-4", style: "height: 100%", alt: "picture"%>
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<h1 class="text-center-1"> <%= @photo.title %> </h1>
 
-<%= link_to 'Back', photos_path %>
+<h3 class="text-center-1"><%= @photo.description %></h3>

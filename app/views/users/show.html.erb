@@ -14,27 +14,4 @@
 
 
 
-
-
-<div class="row">
-
-
-
-  <% @photos.each_with_index do |photo, index| %>
-      <figure class="col-md-4 " style="width: 18rem">
-          <a href="image_source" data-size="700x800">
-          <div class="hovereffect">
-            <%= image_tag photo.file, class: "img-fluid", style: "height: 100%", alt: "picture"%>
-              <div class="overlay">
-               
-                <p>
-                  <%= photo.title %>
-                </p>
-                <%= link_to 'Delete', photo, method: :delete, data: {confirm: 'Are you sure?'} %>
-              </div>
-          </a>
-          
-        </figure>
-        
-  <% end %>
-  </div>
+ <%= render 'layouts/gallery'%>

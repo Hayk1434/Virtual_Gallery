@@ -3,9 +3,9 @@
       <%= link_to "Help",  static_pages_help_path, :class => "a" %>
       <% if user_signed_in? %>
             <%= link_to "Profile",  user_path(current_user), :class => "a" %>
-            <%= link_to "Log out",  destroy_user_session_path, method: :delete, :class => "a" %>
             <%= link_to "Edit Profile", edit_user_registration_path, :class => "a" %>
             <%= link_to 'Add photo', new_photo_path, :class => "a" %>
+            <%= link_to "Log out",  destroy_user_session_path, method: :delete, :class => "a" %>
         <% else %>
             <%= link_to "Log in", new_user_session_path, :class => "a"  %>
         <% end %>
