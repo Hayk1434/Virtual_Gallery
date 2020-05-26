@@ -14,7 +14,7 @@ gem 'mini_magick'
 
 gem 'devise'
 
-gem 'rails', '~> 6.0.2'
+gem 'rails', '~> 6.0.3'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
